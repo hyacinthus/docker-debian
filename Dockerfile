@@ -1,4 +1,4 @@
-FROM debian:slim
+FROM debian:9-slim
 
 # Install wget and install/updates certificates
 RUN apt-get update \
