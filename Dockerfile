@@ -1,9 +1,10 @@
 FROM debian:9-slim
 
-# Install wget and install/updates certificates
+# Install curl and install/updates certificates
 RUN apt-get update \
     && apt-get install -y -q --no-install-recommends \
     ca-certificates \
+    curl \
     && apt-get clean
 
 ENV TZ=Asia/Shanghai
