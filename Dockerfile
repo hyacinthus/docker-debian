@@ -1,4 +1,4 @@
-FROM debian:10-slim
+FROM debian:slim
 
 # Install curl and install/updates certificates
 RUN apt-get update \
@@ -7,4 +7,5 @@ RUN apt-get update \
     curl \
     && apt-get clean
 
+# Set China timezone
 ENV TZ=Asia/Shanghai
